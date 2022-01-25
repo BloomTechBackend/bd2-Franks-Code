@@ -64,18 +64,20 @@ public class ApplicationProgram {
                         try {
                                 int bowlerNumber = Integer.parseInt(response);
                                 ShowBowler(theBowlers.get(bowlerNumber - 1));
-                        } catch (NumberFormatException exceptionObj) {
+                        }
+                        catch (NumberFormatException exceptionObj) {
                                 try {
                                         throw new InvalidBowlerNumberException("input value " + response + "' was non-numeric");
-                                } catch (InvalidBowlerNumberException exceptionInfo) {
+                                }
+                                catch (InvalidBowlerNumberException exceptionInfo) {
                                         exceptionInfo.printStackTrace();
                                         System.out.println(getCurrentTimeStamp() + " Please enter a numeric value in the range expected");
                                 }
                         }
-                        catch (IndexOutOfBoundsException excoeptionObj) {
+                        catch (IndexOutOfBoundsException exceptionObj) {
                                 System.out.println("\nInvalid bowler number: " + response);
                                 System.out.println("Please enter a value in the range indicated");
-                                excoeptionObj.printStackTrace();
+                                exceptionObj.printStackTrace();
                         }
                 }
                 System.out.println("-".repeat(80));
