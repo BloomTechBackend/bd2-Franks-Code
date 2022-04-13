@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.*;
 
 // Data may be sent with an HTTP request:
 //
-//   GET or DELETE the data is sent in a query paramter in the URL
-//   POST or PUT the data is sent in the body of the request as JSON
+//   GET or DELETE the data is sent in a query paramter in the URL   - @RequestParam
+//   POST or PUT the data is sent in the body of the request as JSON - @RequestBody
 //
 //  Java deals in objects, the server deals with JSON
 //  objects need to be converted to JSON and JSON converted to objects
