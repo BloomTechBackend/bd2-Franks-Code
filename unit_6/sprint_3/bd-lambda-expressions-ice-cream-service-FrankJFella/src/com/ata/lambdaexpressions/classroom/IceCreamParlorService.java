@@ -117,7 +117,7 @@ public class IceCreamParlorService {
         // use a map() helper method with method reference to get List<Queue<Ingredients>
         //List<Queue<Ingredient>> ingredientQueues = map(recipes, RecipeConverter::fromRecipeToIngredientQueue);
 
-        // use a stream().mao() method with method reference to get List<Queue<Ingredients>
+        // use a stream().map() method with method reference to get List<Queue<Ingredients>
         List<Queue<Ingredient>> ingredientQueues = recipes.stream().map(RecipeConverter::fromRecipeToIngredientQueue)
                                                                    .collect(Collectors.toList());
 
